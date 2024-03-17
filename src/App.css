@@ -1,0 +1,59 @@
+/* App.css */
+body{
+  background: lightblue!important;
+  color: white;
+  padding: 30px;
+}
+
+.container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px;
+}
+/*  */
+.card:active {
+  cursor: grabbing;
+}
+
+
+/* header */
+header{
+  display:block;
+  width:100%;
+}
+
+/* App.css */
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  height: 100px;
+  background-color: #bd7777;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.card.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.card:nth-child(even) {
+  background-color: #938bc8;
+}
